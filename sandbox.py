@@ -1,4 +1,5 @@
 import json
+import controler
 
 animals = open('animal.json', "r")
 equipment = open('equipment.json', 'r')
@@ -14,5 +15,5 @@ for animal in animals.keys():
 for tool in equipment:
     print('equipement ', tool, equipment[tool])
 
-for animal in animals:
-    print(animal, type(animal))
+
+print(controler.nourrir("Tic"))
